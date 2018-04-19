@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70dp"
+                >
+
+    <RelativeLayout
+        android:id="@+id/child_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_13dp"
+        android:paddingStart="@dimen/dimen_13dp"
+        android:paddingTop="@dimen/dimen_15dp">
+
+        <ImageView
+            android:id="@+id/child_image"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:src="@drawable/ic_launcher"/>
+
+        <com.nischinttechnologies.n4e.util.Lato_semibold_TV
+            android:id="@+id/child_name"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_toEndOf="@+id/child_image"
+            android:layout_toRightOf="@+id/child_image"
+            android:hint="Jessica Taylor"
+            android:textColor="@color/child_unselected_color"
+            android:textSize="@dimen/text_15sp"/>
+        <com.nischinttechnologies.n4e.util.Lato_semibold_TV
+            android:id="@+id/child_licenceCode"
+            android:layout_below="@+id/child_name"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_toEndOf="@+id/child_image"
+            android:layout_toRightOf="@+id/child_image"
+            android:text="ECFE7D"
+            android:layout_marginTop="@dimen/dimen_9dp"
+            android:textColor="@color/child_unselected_color"
+            android:textSize="@dimen/text_8sp"/>
+
+        <ImageView
+            android:id="@+id/osTypeImage"
+            android:layout_width="@dimen/dimen_14dp"
+            android:layout_height="@dimen/dimen_14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_toLeftOf="@+id/select_icon"
+            android:layout_toStartOf="@+id/select_icon"/>
+
+        <ImageView
+            android:id="@+id/select_icon"
+            android:layout_width="@dimen/dimen_14dp"
+            android:layout_height="@dimen/dimen_14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:src="@drawable/icn_tick_mark"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
